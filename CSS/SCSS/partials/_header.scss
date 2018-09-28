@@ -1,0 +1,135 @@
+.header-container{
+    width:100%;
+    header{
+        display: inline-block;
+        padding: 2rem 1rem;
+        
+        .left{
+            width: 50%;
+            float: left;
+            h1{
+                font-size: $h1;
+                color: $color-white;
+                padding: $padding-general;
+                width: 75%;
+                margin: 0 auto;
+            }
+            .p-left{
+                color: $color-lightGray;
+                padding: $padding-general;
+                width: 75%;
+                margin: 0 auto;
+            }
+            .left-btn-container{
+                margin: 0 auto;
+                max-width: 75%;
+                text-align: center;
+                
+                .btn{
+                    background-color: transparent;
+                    color: $color-white;
+                    padding: 10px 20px;
+                    border: solid 1px;
+                    border-radius: 20px;
+                    box-shadow: none;
+                }
+                    
+                .orange{
+                    border-color:$color-orange;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }                
+                .blue{
+                    border-color: $color-blue;
+                }
+            }
+        }
+
+        .right{
+            width: 50%;
+            float: right;
+            
+            table{
+                width: 100%;
+                //top of the table
+                td{
+                    .circle{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    display: inline-block;                       
+                    }
+                    #blue{
+                        border: solid 2px $color-blue;
+                    }
+                    #orange{
+                        border: solid 2px $color-orange;
+                    }
+                    #red{
+                        border: solid 2px $color-red;
+                    }
+                }
+                .indexType{
+                    color: $color-lightGray;
+                    font-size: $xtra-small;
+                    font-weight: 300;
+                    text-align: left;                    
+                }
+                .percentage{
+                    color: $color-white;
+                    font-size: $small;
+                }
+                ///bottom of the table for red percentages
+                #bottom{
+                    width: 100%;
+                    .bottomNumber{
+                        color: $color-red;
+                        font-size: $xtra-small;
+                        padding-top: 5px;
+                        text-align: center;
+                    }
+                }
+            }            
+            #graph{                
+                padding: 2rem 0 2.5rem 0;
+                max-width: 100%;
+            }
+            .p-right{
+                color: $color-lightGray;
+                font-size: $xtra-small;
+                width: 90%;
+            }
+        }
+    }
+}
+
+/*-----------------------------------------
+            Media Queries
+----------------------------------------*/
+
+@media only screen and (max-width: 890px) {
+    .header-container{
+        header{
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+                margin-top: 5rem;
+                text-align: center;
+                            
+                    .bottomNumber{
+                        text-align: left !important;
+                    }
+            
+                .p-right{
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,118 @@
+.footer-container{
+    width:100%;
+    display: inline-block;
+    min-height: 300px;
+    color: $color-white;
+    padding: $padding-general;
+    font-size: 1.75rem;
+    margin-top: 5rem;
+    h1{
+        margin-top: 2rem;
+    }
+    .social-link{
+        font-size: 1rem;
+        color: $color-lightGray !important;
+        float: right;
+        
+        i{
+            padding-right: 3rem;
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        float: right;
+        padding-top: 1rem;
+    }
+    
+    .bottomLine{
+        min-height: 200px;
+        margin: 3rem 0 3rem 0;
+        
+        input{
+            font-size: 2rem;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $color-white;
+            color: $color-blue;
+            max-width: 300px;    
+            float: left;
+        }
+        
+        button{
+             background-color: transparent;
+            color: $color-white;
+            padding: 10px 20px;
+            border: solid 1px;
+            border-radius: 20px;
+            box-shadow: none;                
+            border-color:$color-blue;
+            font-size: 1.25rem;
+            margin-left: 2rem;
+        }
+        ul{
+            font-size: $xtra-small;
+            float: right;
+            
+            li{
+                display: inline-block;
+                margin-right: 1.5rem;
+                padding: 1rem 0;
+                color: $color-lightGray;
+            }
+            li:nth-last-child(1){
+                margin-right: 0;
+            }
+        }
+    }
+}
+/**************************************
+        Media Queries
+**************************************/
+@media only screen and (max-width: 890px) {
+    .footer-container{
+        width: 100%;
+        padding: 0;
+        h1{
+            padding-top: 8rem;
+            .social-link{
+        i{
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+        }
+    }
+        }    
+    p{
+        font-size: 1.5rem;
+        float: right;
+        margin-right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .bottomLine{
+        padding-top: 2rem;
+        text-align: center;
+        
+        input{
+            padding-top: 10px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        button{
+           margin: 1rem 0;
+        }
+        ul{
+            font-size: $xtra-small;
+            float: left;
+            width: 100%;
+            
+            li{
+                font-size: 1.2rem;
+            }
+            li:nth-last-child(1){
+                margin-right: 0;
+            }
+        }
+    }
+}    
+}

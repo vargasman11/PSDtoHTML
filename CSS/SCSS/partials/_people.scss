@@ -1,0 +1,73 @@
+.people{
+    width: 100%;
+    padding: $padding-general;
+    min-height: 800px;
+    
+    h1{
+        font-size: $h1;
+        color: $color-white;
+        padding: 1rem 0;
+    }
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 5rem;
+//        background-color: green;
+        
+        .card{
+            position: relative;
+            text-align: center;
+            background-color: blue;
+            margin-top: 4rem;
+            
+            .profile-pic{
+            height: 100px;
+            width: 100px; 
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+            
+            .card-body{
+                background-color: $color-mediumGray;
+                height: 250px;
+                top: 20%;
+                h2{
+                    color: $color-white;
+                    font-size: 1.25rem;
+                    padding: 4rem 0 1rem 0;                    
+                }
+                h3{
+                    background-color: $color-white;
+                    display: inline-block;
+                    padding: .12rem .5rem;
+                    color: $color-darkGray;
+                    font-weight: 700;
+                }
+                .summary{
+                    color: $color-lightGray;
+                    font-size: $xtra-small;
+                    line-height: 1.5;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+     .card-container{
+         display: flex !important;
+         flex-direction: column;
+         justify-content: center;
+         .card{
+            width: 70%;
+            margin: 0 auto;
+         } 
+    }
+}

@@ -1,0 +1,29 @@
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/nav';
+@import 'partials/header';
+@import 'partials/article';
+@import 'partials/icons';
+@import 'partials/split';
+@import 'partials/slogan';
+@import 'partials/people';
+@import 'partials/investor';
+@import 'partials/footer';
+
+html,
+body{
+    min-height:100%;
+}
+
+body{
+    background:$color-gradient;
+    font-family: $main-font;
+    
+    .main-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        height:100%;
+        overflow: hidden;
+    }
+}

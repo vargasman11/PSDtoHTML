@@ -1,0 +1,75 @@
+.article-container{
+    width: 100%;
+    padding: 2rem 1rem;
+    .leftRightContainer{
+        display: inline-block;
+        width: 100%;
+        .left-article{
+            width: 50%;
+            float: left;
+            padding: $padding-general;
+            h1{
+                color: $color-white;
+                font-size: $h1;
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+        .right-article{
+            width:50%;   
+            float: right;
+            padding-top: 2.5rem;
+            
+            .icon-table{
+                font-size: $xtra-small;
+                color: $color-white;
+                .icons{
+                    font-size: 1.12rem;
+                    padding-bottom: 1rem;
+                }
+                //icon colors
+                .fa-file-invoice-dollar{
+                    color: $color-blue;
+                }
+                .fa-credit-card{
+                    color:$color-orange;
+                }
+                .fa-file{
+                    color:$color-purple;
+                }
+                //small text under icons
+                .small{
+                    text-align: left;
+                    padding-right: 25px;
+                }
+            }
+        }    
+    }
+}
+@media only screen and (max-width: 890px) {
+    .left-article{
+        margin: 0;
+        min-width: 100%;
+        h1{
+        text-align: center;
+        }
+    }
+    .right-article{
+        min-width: 100%; 
+        text-align: center;
+        .small{
+            text-align: right;
+            padding-right: 0 !important;  
+            padding-left: 1rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
