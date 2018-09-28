@@ -5,5 +5,5 @@ dribble design to html
 https://dribbble.com/shots/4811301
 Designer : https://goutham.co/
 
-# Design link
+# Description
 seleceted this design and made it into a responsive static site.
